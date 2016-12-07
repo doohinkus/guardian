@@ -1,0 +1,6 @@
+body {
+  background-color: $wild-sand;
+}
+.container {
+  @include outer-container(100%);
+}

@@ -1,0 +1,57 @@
+
+//extendd helpers
+
+
+.masthead {
+  @include span-columns(12);
+  @include omega();
+  background-color: $orient;
+  height: 50px;
+}
+.masthead-options {
+  @include span-columns(6);
+}
+%nav-helper{
+    @include fill-parent();
+    @include row(table);
+    height: 35px;
+    color: #fff;
+}
+.nav-left {
+  @include span-columns(9);
+  @extend %nav-helper;
+  background-color: $regal-blue;
+}
+.nav-right {
+  @include span-columns(3);
+  @extend %nav-helper;
+  background-color: $mine-shaft;
+}
+.nav-right h3, .nav-right img{
+
+  float: right;
+}
+
+svg{
+  // background-color: $masthead-text;
+}
+#jobs, #us-edition, #logo {
+  float: right;
+}
+#search, #us-edition, #jobs, #sign-in, #become-a-supporter, #subscribe, #google-supporter{
+  display: none;
+}
+#logo {
+  width: 160px;
+
+}
+.nav-left{
+  ul{
+    li{
+      display: inline-block;
+      float: left;
+      margin-right: 20px;
+    }
+    clear: both;
+  }
+}

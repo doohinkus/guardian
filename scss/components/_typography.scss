@@ -1,0 +1,6 @@
+body{
+  @include font-face("dejavu", "../fonts/DejaVuSerif-webfont");
+}
+.masthead {
+  color: $masthead-text;
+}

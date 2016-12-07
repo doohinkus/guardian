@@ -1,0 +1,139 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0px; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background-color: #f6f6f6; }
+
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.masthead {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-right: 0;
+  background-color: #005689;
+  height: 50px; }
+  .masthead:last-child {
+    margin-right: 0; }
+
+.masthead-options {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .masthead-options:last-child {
+    margin-right: 0; }
+
+.nav-left, .nav-right {
+  width: 100%;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  height: 35px;
+  color: #fff; }
+
+.nav-left {
+  display: table-cell;
+  width: 75%;
+  background-color: #00456E; }
+
+.nav-right {
+  display: table-cell;
+  width: 25%;
+  background-color: #333333; }
+
+.nav-right h3, .nav-right img {
+  float: right; }
+
+#jobs, #us-edition, #logo {
+  float: right; }
+
+#search, #us-edition, #jobs, #sign-in, #become-a-supporter, #subscribe, #google-supporter {
+  display: none; }
+
+#logo {
+  width: 160px; }
+
+.nav-left ul {
+  clear: both; }
+  .nav-left ul li {
+    display: inline-block;
+    float: left;
+    margin-right: 20px; }
+
+@font-face {
+  body {
+    font-family: "dejavu";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/DejaVuSerif-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/DejaVuSerif-webfont.woff2") format("woff2"), url("../fonts/DejaVuSerif-webfont.woff") format("woff"), url("../fonts/DejaVuSerif-webfont.ttf") format("truetype"), url("../fonts/DejaVuSerif-webfont.svg#dejavu") format("svg"); } }
+.masthead {
+  color: #fff; }
+
+/*# sourceMappingURL=application.css.map */
