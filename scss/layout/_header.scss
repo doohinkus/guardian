@@ -31,9 +31,16 @@
 
   float: right;
 }
-
-svg{
-  // background-color: $masthead-text;
+#sign-in-pic {
+  margin-left: 15px; 
+}
+svg:not(#logo-svg){
+  border: 1px solid $cerulean;
+  border-radius: 100px;
+  margin-top: 7px;
+  padding: 4px;
+  height: 30px;
+  width: 30px;
 }
 #jobs, #us-edition, #logo {
   float: right;
@@ -43,14 +50,18 @@ svg{
 }
 #logo {
   width: 160px;
+  margin-right: 25px;
 
 }
 .nav-left{
   ul{
+
     li{
       display: inline-block;
       float: left;
       margin-right: 20px;
+
+
     }
     clear: both;
   }

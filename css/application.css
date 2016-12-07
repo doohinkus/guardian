@@ -59,9 +59,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body {
-  background-color: #f6f6f6; }
-
 .container {
   max-width: 100%;
   margin-left: auto;
@@ -70,6 +67,60 @@ body {
     clear: both;
     content: "";
     display: block; }
+
+.image-responsive {
+  width: 100%;
+  height: auto; }
+
+.static-pic {
+  height: 75px;
+  width: 125px;
+  float: left; }
+
+.weather {
+  margin: 0px 15px;
+  height: 35px; }
+
+.story-box {
+  background-color: #f6f6f6;
+  border-top: 1px solid #4fc6df;
+  margin: 10px 15px; }
+  .story-box:hover {
+    background-color: #dddddd; }
+
+.first-story {
+  margin: 0px 15px; }
+
+#first-headline {
+  height: 75px; }
+
+#first-scndheadline {
+  height: 75px; }
+
+.second-story, .third-story, .fourth-story, .fifth-story, .sixth-story, .seventh-story, .eighth-story, .ninth-story, .tenth-story {
+  height: 85px; }
+
+#second-photo, #third-photo, #fourth-photo {
+  height: 75px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  min-width: 125px; }
+  #second-photo:last-child, #third-photo:last-child, #fourth-photo:last-child {
+    margin-right: 0; }
+
+#second-headline, #third-headline, #fourth-headline {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  height: 75px; }
+  #second-headline:last-child, #third-headline:last-child, #fourth-headline:last-child {
+    margin-right: 0; }
+
+#fifth-headline, #sixth-headline, #seventh-headline, #eighth-headline, #ninth-headline, #tenth-headline {
+  height: 40px; }
 
 .masthead {
   float: left;
@@ -111,6 +162,17 @@ body {
 .nav-right h3, .nav-right img {
   float: right; }
 
+#sign-in-pic {
+  margin-left: 15px; }
+
+svg:not(#logo-svg) {
+  border: 1px solid #019FDE;
+  border-radius: 100px;
+  margin-top: 7px;
+  padding: 4px;
+  height: 30px;
+  width: 30px; }
+
 #jobs, #us-edition, #logo {
   float: right; }
 
@@ -118,7 +180,8 @@ body {
   display: none; }
 
 #logo {
-  width: 160px; }
+  width: 160px;
+  margin-right: 25px; }
 
 .nav-left ul {
   clear: both; }
@@ -127,12 +190,32 @@ body {
     float: left;
     margin-right: 20px; }
 
+html {
+  font-size: 62.5%; }
+
 @font-face {
-  body {
-    font-family: "dejavu";
-    font-style: normal;
-    font-weight: normal;
-    src: url("../fonts/DejaVuSerif-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/DejaVuSerif-webfont.woff2") format("woff2"), url("../fonts/DejaVuSerif-webfont.woff") format("woff"), url("../fonts/DejaVuSerif-webfont.ttf") format("truetype"), url("../fonts/DejaVuSerif-webfont.svg#dejavu") format("svg"); } }
+  font-family: "dejavu";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/DejaVuSerif-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/DejaVuSerif-webfont.woff2") format("woff2"), url("../fonts/DejaVuSerif-webfont.woff") format("woff"), url("../fonts/DejaVuSerif-webfont.ttf") format("truetype"), url("../fonts/DejaVuSerif-webfont.svg#dejavu") format("svg"); }
+body {
+  font-family: "dejavu"; }
+
+h2 {
+  font-size: 2.4rem;
+  color: #5c5c5c; }
+
+h4 {
+  font-size: 1.75rem;
+  color: #5c5c5c; }
+
+p, li {
+  font-size: 1.5rem;
+  color: #5c5c5c; }
+
+li {
+  color: white; }
+
 .masthead {
   color: #fff; }
 

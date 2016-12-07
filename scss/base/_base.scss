@@ -1,6 +1,20 @@
+// *:not(body),
+// *:not(html){
+//   border: 1px dotted black;
+// }
 body {
-  background-color: $wild-sand;
+  // background-color: $wild-sand;
 }
 .container {
   @include outer-container(100%);
+
+}
+.image-responsive {
+  width: 100%;
+  height: auto;
+}
+.static-pic {
+  height: 75px;
+  width: 125px;
+  float: left;
 }
