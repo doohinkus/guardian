@@ -1,0 +1,16 @@
+// *:not(body),
+// *:not(html){
+//   border: 1px dotted black;
+// }
+//basic reset
+html, body{
+  margin: 0;
+}
+.image-responsive {
+  width: 100%;
+  height: auto;
+}
+.static-pic {
+  height: 75px;
+  width: 125px;
+}

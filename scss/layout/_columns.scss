@@ -1,0 +1,33 @@
+.container{
+  .masthead{
+    @include outer-container();
+    // @include omega();
+    @include span-columns(12);
+    .masthead-options{
+      @include span-columns(6 of 12);
+    }
+    @include direction-context(right-to-left) {
+      #logo{
+        @include span-columns(6 of 12);
+      }
+    }
+  }
+  .nav-wrapper{
+    @include outer-container();
+    .nav-left{
+      @include span-columns(10);
+    }
+    .nav-right{
+      @include span-columns(2);
+      text-align: right;
+    }
+    .nav-left, .nav-right{
+      @include pad(0 $padding);
+    }
+  }
+  .story-box{
+    @include margin(0 $padding);
+    @include pad(0 2px);
+  }
+
+}

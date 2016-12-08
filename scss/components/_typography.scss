@@ -1,29 +1,23 @@
-html{
-  font-size: 62.5%;
-}
-
 @include font-face("dejavu", "../fonts/DejaVuSerif-webfont");
-body{
-    font-family: "dejavu";
-}
-
-h2{
-  font-size: 2.4rem;
-  color: $scorpion;
-}
-h4{
-  font-size: 1.75rem;
-    color: $scorpion;
-}
-p, li{
- font-size: 1.5rem;
- color: $scorpion;
-}
-li {
-  color: white;
+.container{
   font-family: "dejavu";
-  font-size: 1.8rem;
-}
-.masthead {
-  color: $masthead-text;
+  //colors
+  .nav-wrapper{
+    .nav-left{
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+  .story-lead{
+    .story-headline h2 span:after{
+      content: " / "
+    }
+    .story-headline h2 span{ 
+      color: $scorpion;
+    }
+    span{
+      color: $wild-sand;
+    }
+  }
+
 }

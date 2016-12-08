@@ -1,20 +1,13 @@
-// *:not(body),
-// *:not(html){
-//   border: 1px dotted black;
-// }
-body {
-  // background-color: $wild-sand;
-}
-.container {
-  @include outer-container(100%);
+// Bitters 1.5.0
+// http://bitters.bourbon.io
+// Copyright 2013-2015 thoughtbot, inc.
+// MIT License
 
-}
-.image-responsive {
-  width: 100%;
-  height: auto;
-}
-.static-pic {
-  height: 75px;
-  width: 125px;
-  float: left;
-}
+@import "variables";
+@import "buttons";
+@import "forms";
+@import "layout";
+@import "lists";
+@import "media";
+@import "tables";
+@import "typography";

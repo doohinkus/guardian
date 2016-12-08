@@ -1,64 +1,18 @@
-.weather {
-  margin: 0px 15px;
-  height: 35px;
-  // border: 1px dotted black;
-}
-.story-box{
-  background-color: $wild-sand;
-  border-top: 1px solid $viking;
-  margin: 10px 15px;
-  &:hover{
-    background-color: darken($wild-sand, 10%);
+.container {
+  @include outer-container(100%);
+  background-color: darken($wild-sand, 5%);
+  // @include omega();
+  //container colors
+  .masthead{
+    background-color: $orient;
   }
-  @media (min-width: 740px) {
-    @include row();
-    @include span-columns(3);
+  .nav-wrapper{
+    background-color: $regal-blue;
+    .nav-right{
+      background-color: $mine-shaft !important;
+    }
   }
-}
-.first-story {
-  // height: 375px;
-  // width: 360px;
-  margin: 0px 15px;
-
-  @media (min-width: 740px) {
-    @include span-columns(9);
+  .story-box{
+    background-color: $wild-sand;
   }
-
-}
-#first-photo {
-  // height: 200px;
-  // width: 360px;
-
-}
-#first-headline {
-  height: 75px;
-  // width: 360px;
-
-}
-#first-scndheadline {
-  height: 75px;
-  // width: 360px;
-
-}
-.second-story, .third-story, .fourth-story, .fifth-story, .sixth-story, .seventh-story, .eighth-story, .ninth-story, .tenth-story {
-  // width: 365px;
-
-  height: 85px;
-}
-
-#second-photo, #third-photo, #fourth-photo {
-  height: 75px;
-
-  // border-color: red;
-  @include span-columns(2);
-    min-width: 125px;
-}
-#second-headline, #third-headline, #fourth-headline {
-  // width: 230px;
-  @include span-columns(10);
-  height: 75px;
-}
-#fifth-headline, #sixth-headline, #seventh-headline, #eighth-headline, #ninth-headline, #tenth-headline {
-  // width: 330px;
-  height: 40px;
 }
