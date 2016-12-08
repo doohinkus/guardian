@@ -1,6 +1,6 @@
 .container {
   @include outer-container(100%);
-  background-color: darken($wild-sand, 5%);
+  background-color: white;
   // @include omega();
   //container colors
   .masthead{
@@ -9,10 +9,12 @@
   .nav-wrapper{
     background-color: $regal-blue;
     .nav-right{
-      background-color: $mine-shaft !important;
+      background-color: $mine-shaft;
     }
   }
-  .story-box{
-    background-color: $wild-sand;
+  .story-box, .story-lead{
+    background-color: darken($wild-sand, 1%);
+    border-top: 1px solid $cerulean;
+
   }
 }

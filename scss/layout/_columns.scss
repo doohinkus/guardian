@@ -25,9 +25,17 @@
       @include pad(0 $padding);
     }
   }
-  .story-box{
+  .story-box, .story-lead{
     @include margin(0 $padding);
     @include pad(0 2px);
+  }
+  .story-box{
+    clear: both;
+    overflow: hidden;
+    margin-bottom: $padding;
+  }
+  .story-box .static-pic{
+    float: left;
   }
 
 }

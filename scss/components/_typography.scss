@@ -12,12 +12,16 @@
     .story-headline h2 span:after{
       content: " / "
     }
-    .story-headline h2 span{ 
+    .story-headline h2 span{
       color: $scorpion;
     }
-    span{
-      color: $wild-sand;
+    .story-headline span{
+      color: darken($wild-sand, 10%);
     }
+  }
+  .story-box h4{
+    font-size: .79rem;
+  
   }
 
 }
