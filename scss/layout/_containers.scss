@@ -10,11 +10,19 @@
   &:hover{
     background-color: darken($wild-sand, 10%);
   }
+  @media (min-width: 740px) {
+    @include row();
+    @include span-columns(3);
+  }
 }
 .first-story {
   // height: 375px;
   // width: 360px;
   margin: 0px 15px;
+
+  @media (min-width: 740px) {
+    @include span-columns(9);
+  }
 
 }
 #first-photo {
@@ -37,6 +45,7 @@
 
   height: 85px;
 }
+
 #second-photo, #third-photo, #fourth-photo {
   height: 75px;
 

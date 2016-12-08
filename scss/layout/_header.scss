@@ -21,18 +21,21 @@
   @include span-columns(9);
   @extend %nav-helper;
   background-color: $regal-blue;
+  z-index:1;
+
 }
 .nav-right {
   @include span-columns(3);
   @extend %nav-helper;
   background-color: $mine-shaft;
+  z-index: 9;
 }
 .nav-right h3, .nav-right img{
-
   float: right;
+
 }
 #sign-in-pic {
-  margin-left: 15px; 
+  margin-left: 15px;
 }
 svg:not(#logo-svg){
   border: 1px solid $cerulean;
@@ -54,15 +57,22 @@ svg:not(#logo-svg){
 
 }
 .nav-left{
-  ul{
+  // @include span-columns(9);
+  width: 90%;
+  position: relative;
 
-    li{
+
+}
+.nav-solution{
+  position: absolute;
+  min-width: 740px;
+  z-index: 0;
+  overflow-y: hidden;
+  h3{
+
       display: inline-block;
       float: left;
       margin-right: 20px;
-
-
-    }
-    clear: both;
+      // text-overflow: ellipsis;
   }
 }
