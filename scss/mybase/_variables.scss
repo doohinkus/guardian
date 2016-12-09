@@ -1,15 +1,17 @@
 //colors
-$wild-sand : #f6f6f6;
-$orient: #005689;
-$masthead-text: #fff;
-$regal-blue : #00456E;
-$mine-shaft : #333333;
-$viking     : #4fc6df;
-$scorpion: #5c5c5c;
-$cerulean : #019FDE;
+$wild-sand       : #f6f6f6;
+$orient          : #005689;
+$masthead-text   : #fff;
+$regal-blue      : #00456E;
+$mine-shaft      : #333333;
+$viking          : #4fc6df;
+$scorpion        : #5c5c5c;
+$cerulean        : #019FDE;
 
 //breakpoints
-$mobile: 720px;
-$tablet: 1000px;
+$mobile: new-breakpoint(max-width 720px);
+$tablet: new-breakpoint(min-width 721px max-width 1000px);
+
 
 $padding: 15px;
+$height-hack: 610px;

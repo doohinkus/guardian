@@ -12,9 +12,8 @@
       background-color: $mine-shaft;
     }
   }
-  .story-box, .story-lead{
+  .story-box, .story-lead, .features .features-lead, .features .features-box{
     background-color: darken($wild-sand, 1%);
     border-top: 1px solid $cerulean;
-
   }
 }

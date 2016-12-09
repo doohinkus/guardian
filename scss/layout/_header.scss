@@ -1,4 +1,16 @@
 .container{
+  .headlines{
+    h3{
+      font-size: .7rem;
+      @include pad(0 $padding);
+      @include media ($mobile){
+        display: none;
+      }
+      @include media ($tablet){
+        display: block;
+      }
+    }
+  }
   .masthead{
     #logo {
       width: 160px;
@@ -18,9 +30,19 @@
   .masthead{
     .masthead-options{
       #become-a-supporter, #search, #us-edition, #jobs, #google-supporter, #sign-in, #subscribe{
-        @media (max-width: $mobile){
+        @include media ($mobile){
           display: none;
         }
+        @include media ($tablet){
+          display: none;
+        }
+      }
+    }
+
+    #logo{
+      @include media ($tablet){
+        width: 200px;
+        text-align: right;
       }
     }
   }

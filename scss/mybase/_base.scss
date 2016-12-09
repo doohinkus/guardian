@@ -3,8 +3,8 @@
 //   border: 1px dotted black;
 // }
 //basic reset
-html, body{
-  margin: 0;
+html, body, h2, h4, .container{
+  margin: 0 !important;
 }
 .image-responsive {
   width: 100%;
@@ -13,4 +13,11 @@ html, body{
 .static-pic {
   height: 75px;
   width: 125px;
+  @include pad($padding/3);
+}
+.features .features-box .static-pic{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: auto;
 }

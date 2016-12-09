@@ -8,20 +8,37 @@
       font-weight: bold;
     }
   }
+  .headlines{
+    .headlines-today{
+      h2{
+        @include pad(0 $padding);
+      }
+    }
+  }
   .story-lead{
-    .story-headline h2 span:after{
-      content: " / "
+    .story-headline{
+      h2{
+        span:after{
+          content: " / "
+        }
+      }
     }
-    .story-headline h2 span{
-      color: $scorpion;
+    .story-headline{
+      h2 {
+        span{
+          color: $scorpion;
+        }
+      }
     }
-    .story-headline span{
-      color: darken($wild-sand, 10%);
+    .story-headline{
+      span{
+        color: darken($wild-sand, 10%);
+      }
+    }
+    .story-box{
+      h4{
+        font-size: .79rem;
+      }
     }
   }
-  .story-box h4{
-    font-size: .79rem;
-  
-  }
-
 }
